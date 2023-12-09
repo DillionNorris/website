@@ -1,0 +1,62 @@
+
+
+[
+    
+    {
+        "name":"Juju McDowell",
+        "year":"Junior",
+        "position": "RB",
+        "number":"0",
+        "img": "../players/jujum.jpg"
+    },
+    {
+        "name":"Debo Williams",
+        "year":"RS Junior",
+        "position":"LB",
+        "number":"0",
+        "img":"../players/debow.jpg"
+    },
+    {
+        "name":"Trey Knox",
+        "year":"Graduate",
+        "position":"TE",
+        "number":"1",
+        "img":"../players/treyk.jpg"
+    },
+    {
+        "name":"DQ Smith",
+        "year":"Sophmore",
+        "position":"DB",
+        "number":"1",
+        "img":"../players/dqs.jpg"
+    },
+    {
+        "name":"O'Donnell Fortune",
+        "year":"RS Junior",
+        "position":"DB",
+        "number":"3",
+        "img":"../players/odonf.jpg"
+    },
+    {
+        "name":"Antwane Wells Jr.",
+        "year":"Senior",
+        "position":"WR",
+        "number":"3",
+        "img":"../players/antwanew.jpg"
+    },
+    {
+        "name":"Dawkins Terrell",
+        "year":"RS Senior",
+        "position":"DE",
+        "number":"4",
+        "img":"../players/terrelld.jpg"
+    },
+    {
+        "name":"Colten Gauthier",
+        "year":"RS Sophmore",
+        "position":"QB",
+        "number":"4",
+        "img":"../players/colteng.jpg"
+    }
+
+]

@@ -1,0 +1,31 @@
+/* recruitments */
+.committed-recruits #player{
+    margin:5px;
+    background-color: white;
+    width: 200px;
+    padding: 5px;
+  }
+  .committed-recruits #player p{
+    text-align: center;
+    padding:5px;
+    margin: -5px;
+    
+  }
+  #recruits-nav button{
+    margin: 5px;
+    margin-top: 10px;
+    width: 100px;
+  
+  }
+  .commitment-item{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+  
+  }
+  #commitment-content{
+    padding: 10px;
+  }
+  #commitment-content p{
+    padding: 5px;
+  }

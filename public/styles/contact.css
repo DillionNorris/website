@@ -1,0 +1,24 @@
+.contact{
+    padding: 10px;
+    margin: 5%;
+    margin-left: 10%;
+  }
+  .contact #logo{
+    max-height: 25%;
+    max-width: 25%;
+    margin-left: 38%;
+  }
+  form{
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  
+  }
+  .contact button{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  

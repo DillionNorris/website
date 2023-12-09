@@ -1,0 +1,25 @@
+/* roster */
+#player{
+    margin:5px;
+    background-color: white;
+    width: 200px;
+    padding: 5px;
+  }
+  #player p{
+    text-align: center;
+    padding:5px;
+    margin: -5px;
+    
+  }
+  .player{
+    margin:5px;
+    background-color: white;
+    width: 200px;
+    padding: 5px;
+  }
+  .player p{
+    text-align: center;
+    padding:5px;
+    margin: -5px;
+    
+  }
