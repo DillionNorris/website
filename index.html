@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <script src="./js/home.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./public/js/home.js"></script>
    
   </head>
 
@@ -15,7 +15,7 @@
       </div>
       <img
         id="to-home"
-        onclick="window.location.href='home.html'"
+        onclick="window.location.href='/'"
         src="images/logo.png"
         alt="logo"
       />
@@ -52,6 +52,27 @@
       <!-- youtube vid (of promo)-->
       <iframe  id="ytvid" width="560" height="315" src="https://www.youtube.com/embed/aLubldpHJkg?si=jPargJcmAjnMRspX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       <h2>Recent Articles</h2>
+
+      <form id="addArticle">
+        <p>
+          <label for="author">Author:</label>
+        <input type="text" name="author">
+        </p>
+
+        <p>
+          <label for="sample">Sample Text:</label>
+          <input type="text" name="sample">
+        </p>
+        <p>
+          <label for="url">url:</label>
+          <input type="text" name="url">
+        </p>
+        <p><input type="submit" name="submitButton" id="submitButton"></p>
+        
+
+
+
+      </form>
       <section id="articleList"></section>
     </div>
   </body>

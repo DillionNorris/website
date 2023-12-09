@@ -8,17 +8,17 @@ app.use(express.json());
 const cors = require("cors");
 app.use(cors());
 const mongoose = require("mongoose");
-//const startMongo = require("./db");
-//const User = require("./user");
+const startMongo = require("./db");
+const User = require("./user");
 const upload = multer({ dest: __dirname + "/public/images" });
 
 
 const bodyParser = require("body-parser");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-app.use(bodyParser.json);
+//app.use(bodyParser.json);
 
-//startMongo();
+startMongo();
 
 //!----------------------------------------------------------------
 //! LOAD PAGES
@@ -26,13 +26,15 @@ app.use(bodyParser.json);
 
 app.get("/", (req, res) => {
  // res.sendFile(__dirname + "/home.html");
+ console.log("loading page");
  res.sendFile(__dirname + "/index.html");
 });
 
 //sever start
-app.listen(3002, () => {
+app.listen(3000, () => {
   console.log("listening on port 3000...");
 });
+
 
 
 
@@ -43,20 +45,7 @@ app.listen(3002, () => {
 // !SIGN UP USER
 //!----------------------------------------------------------------
 
-const UserSchema = mongoose.Schema({
-  username:{
-      type:String,
-      require:true
-  },
-  email:{
-      type:String,
-      requre: true
-  },
-  password:{
-      type: String,
-      reqire: true
-  }
-})
+
 
 app.post("/api/signup", async (req, res) => {
   let result = validateNewUser(req.body);
@@ -135,7 +124,11 @@ const validateLoginUser = (user) => {
 //!----------------------------------------------------------------
 //! CONNECTION TO MONGO DB
 //!----------------------------------------------------------------
-
+/*
+mongoose.connect("mongob://localhost/db")
+.then(()=>console.log("connedted to db"))
+.catch(error => console.log("couldnt connect",error));
+*/
 
 
 //!----------------------------------------------------------------
@@ -143,8 +136,24 @@ const validateLoginUser = (user) => {
 //!----------------------------------------------------------------
 
 //*validate 
+const articleSchema = new mongoose.Schema({
+author: String,
+sample:String,
+url:String,
+});
 
 
+const Article = mongoose.model("Article", articleSchema);
+
+
+createArticle = async()=>{
+  const article = new Article({
+    author : article.body.author,
+    sample : article.body.sample,
+    url: article.body.url,
+  });
+  article.save();
+}
 // get articles
 
 

@@ -1,8 +1,10 @@
-const mongoose = require('mongoose');
+
+
+const mongoose = require("mongoose");
 
 const startMongo = async() => {
     mongoose
-    .connect("mongodb://localhost")
+    .connect("mongodb+srv://danorris:<password>@cluster0.vafcrjz.mongodb.net/?retryWrites=true&w=majority")
     .then(()=>{
         console.log("connect to MongoDB Database");
     })

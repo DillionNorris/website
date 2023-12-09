@@ -25,6 +25,7 @@ const signupSend = async(e)=>{
         return;
     }
     message.innerHTML = "Signed in";
+    console.log
 }
 
 

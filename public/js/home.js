@@ -1,11 +1,32 @@
+
+
+
+
+
 const getHome = async ()=>{
-    const url = "home.json";
+    const url = "/";
     try {
      const response = await fetch(url);
       return await response.json();
   }catch (error) {
       console.log(error);
   }
+
+
+  const addArticle = async(e)=>{
+    e.preventDefault();
+    const form = document.getElementById("addArticle");
+    const formData = new FormData(form);
+    let response;
+
+    response = await fetch("/api/teams",{
+      method: "POST",
+      body: formData,
+    });
+    response = await response.json();
+  }
+
+
   
   }
   
